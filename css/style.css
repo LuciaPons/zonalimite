@@ -1,0 +1,831 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FBF3E5;
+}
+
+/* fuente para titulos
+font-family: "Montserrat", sans-serif; */
+/* fuente para texto
+font-family: "Playfair Display", serif; */
+
+/* sytle header */
+
+header {
+    position: relative;
+}
+
+.headerContainer {
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5rem;
+}
+
+.logo {
+    width: 7rem;
+    margin: 5px;
+}
+
+.navegadorHeader a {
+    text-decoration: none;
+    color: #025159;
+    padding: 2px 7px 2px 7px;
+    font-family: "Playfair Display", serif;
+}
+
+.navegadorHeader li a:hover {
+    color: #BF4904;
+}
+
+.navegadorHeader ul {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    margin-right: 2rem;
+}
+
+.navegadorActivo {
+    border: 1px solid #BF4904;
+    border-radius: 5px;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
+    background-color: rgba(191, 73, 4, 0.1);
+}
+
+.bannerContainer {
+    position: relative;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.banner img {
+    width: 100%;
+    height: 500px;
+    opacity: 0.6;
+    display: block;
+}
+
+.bannerContenido {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    color: #025939;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 5px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2)
+}
+
+.botonSuscribirse {
+    margin: 5px;
+    padding: 8px;
+    font-family: "Montserrat", sans-serif;
+    background-color: #F2EADF;
+    color: #025939;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.botonSuscribirse:hover {
+    box-shadow: 4px 6px 8px rgba(0, 0, 0, 0.4);
+}
+
+@media (max-width: 576px) {
+    .headerContainer {
+        flex-direction: column;
+        align-items: center;
+        margin: 5px;
+        height: 10rem;
+    }
+    .logo {
+        width: 5rem;
+    }
+    .navegadorHeader {
+        align-items: center;
+    }
+    .navegadorHeader ul {
+        font-size: 15px;
+    }
+    .banner img {
+        height: 300px;
+    }
+    .bannerContenido h1 {
+        font-size: 20px;
+    }
+}
+
+/* fin style header */
+
+/* style main */
+
+/* Pagina Inicio */
+
+h2 {
+    font-family: "Montserrat", sans-serif;
+    color: #BF4904;
+    text-align: center;
+    font-size: 30px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.cardsAventurasInicio {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 10px;
+}
+
+.cardsAventurasInicioContenido {
+    background-color: #f5f5f5;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.cardsAventurasInicioContenido a {
+    text-decoration: none;
+}
+
+.cardsAventurasInicioContenido h3 {
+    text-decoration: none;
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: "Playfair Display", serif;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #025159;
+}
+
+.cardsAventurasInicioContenido a h3:hover {
+    color: #BF4904;
+}
+
+.cardsAventurasInicioContenido img {
+    width: 100%;
+    height: 500px;
+    padding: 10px;
+    object-fit: contain;
+}
+
+.cardsDestinoDestacado {
+    display: flex;
+    flex-wrap: wrap;
+    height: 500px;
+    gap: 2rem;
+    margin: 2rem ;
+    padding: 1rem;
+    background-color: #f5f5f5;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.textoDestinoDestacado {
+    flex: 40%;
+    font-family: "Playfair Display", serif;
+    color: #333;
+    margin-top: 50px;
+    margin-left: 10px;
+}
+
+.tituloDestinoDestacado {
+    font-size: 1.4rem;;
+    margin-bottom: 0.5rem;
+    font-family: "Montserrat", sans-serif;
+    color: #BF4904; 
+}
+
+.textoDestinoDestacado p {
+    line-height: 1.6;
+    font-size: 1.3rem;
+    color: #025159;
+}
+
+.mapaDestinoDestacado {
+    flex: 1 1 55%;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.mapaDestinoDestacado iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.seccionInscribirse {
+    position: relative;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.seccionInscribirse img {
+    width: 100%;
+    height: 500px;
+    opacity: 0.4;
+    display: block;
+}
+
+.seccionInscribirseContenido {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: "Playfair Display", serif;
+    color: #025939;
+    font-size: 20px;
+}
+
+.seccionInscribirseBoton {
+    margin: 5px;
+    padding: 8px;
+    font-family: "Montserrat", sans-serif;
+    background-color: #F2EADF;
+    color:#BF4904;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.seccionInscribirseBoton:hover {
+    box-shadow: 4px 6px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* MQ Pagina Inicio */
+
+@media (max-width: 576px) {
+    .cardsAventurasInicio {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+    .cardsAventurasInicioContenido {
+        width: 70%;
+    }
+    .cardsDestinoDestacado {
+        gap: 1px;
+        flex-direction: column;
+    }
+    .textoDestinoDestacado {
+        margin-top: 10px;
+    }
+    .textoDestinoDestacado p {
+        font-size: 1rem;
+        margin-bottom: 1px;
+    }
+    .mapaDestinoDestacado iframe {
+        height: 250px;
+    }
+}
+
+/* Fin pagina Inicio */
+
+/* Pagina Aventuras */
+
+.cardsAventurasContenedor {
+    display: grid;
+    grid-template-rows: 0.5fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "img htres"
+    "img p";
+    column-gap: 20px;
+    margin: 10px;
+    padding: 10px;
+    background-color: #f5f5f5;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.gridAreaImg {
+    grid-area: img;
+    width: 100%;
+    border-radius: 12px; 
+}
+
+.gridAreaHtres {
+    grid-area: htres;
+    text-align: center;
+    font-family: "Playfair Display", serif;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #025159;
+    margin-top: 30px;
+}
+
+.gridAreaP {
+    grid-area: p;
+    text-align: center;
+    font-family: "Playfair Display", serif;
+    font-size: 1.3rem;
+    color: #025159;
+}
+
+.botonContenido {
+    display: block;
+    margin: 10px auto;
+    padding: 8px;
+    font-family: "Montserrat", sans-serif;
+    background-color: #F2EADF;
+    color: #BF4904;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.botonContenido:hover {
+    box-shadow: 4px 6px 8px rgba(0, 0, 0, 0.4);
+}
+
+.htresPreguntasFrecuentes {
+    text-align: center;
+    margin: 10px;
+    font-family: "Playfair Display", serif;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #025159;
+}
+
+.preguntasFrecuentesContenedor {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    text-align: center;
+    font-family: "Playfair Display", serif;
+    color: #025159;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.4); 
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.seccionInscribirseAventuras {
+    width: 80%;
+}
+
+.preguntasFrecuentesPregunta {
+    font-weight: bold;
+    font-family: "Playfair Display", serif;
+    color: #BF4904;
+}
+
+.preguntasFrecuentesTexto {
+    margin: 15px;
+}
+
+/* MQ Pagina Aventuras */
+
+@media (max-width: 576px) {
+    .cardsAventurasContenedor{
+        grid-template-rows: 1fr 0.3fr 0.5fr;
+        grid-template-columns: 2fr;
+        grid-template-areas: 
+            "img"
+            "htres"
+            "p";
+        row-gap: 5px;
+    }
+    .gridAreaHtres {
+        font-size: 1.6rem;
+        margin: 10px;
+        height: 50px;
+    }
+    .gridAreaP {
+        font-size: 1.1rem;
+    }
+    .preguntasFrecuentesContenedor {
+        grid-template-columns: 1.5fr;
+        grid-auto-rows: 0.1fr;
+        font-size: 16px;
+        height: 450px;
+    }
+    .htresPreguntasFrecuentes {
+        font-size: 16px;
+    }
+    .preguntasFrecuentesTexto {
+        margin: 6px;
+        font-size: 14px;
+    }
+}
+
+/* Fin pagina Aventuras */
+
+/* Pagina Destinos */
+
+.cardsDestinosContenedor {
+    display: flex;
+    font-family: "Playfair Display", serif;
+    margin: 10px;
+    padding: 10px;
+    gap: 20px;
+    background-color: #f5f5f5;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.cardsDestinosImagenConTexto {
+    position: relative;
+    flex: 1 1 60%;
+    overflow: hidden;
+}
+
+.cardsDestinosImagenConTexto img {
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.cardsDestinosTexto {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    color: #025159;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.3rem;
+    line-height: 1.6;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2)
+}
+
+.cardsDestinosTexto h3 {
+  font-size: 1.8rem;
+  color: #025159;
+  margin-bottom: 10px;
+}
+
+.cardsDestinosTexto a {
+    text-decoration: none;
+    font-family: "Playfair Display", serif;
+    color: #BF4904;
+}
+
+.recomendacionesContenedor {
+    display: block;
+    background-color: rgba(191, 73, 4, 0.2);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    margin: 20px;
+}
+
+.recomendacionesContenido {
+    text-align: center;
+    font-family: "Playfair Display", serif;
+    font-size: 1rem;
+    color: #025159;
+}
+
+.recomendacionesContenido h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.recomendacionesContenido p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  color: #BF3604;
+}
+
+.recomendacionesContenido a {
+  color: #025159;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* MQ Pagina Destinos */
+
+@media (max-width: 576px) {
+    .cardsDestinosContenedor {
+        height: 500px;
+        flex-direction: column;
+    }
+    .cardsDestinosTexto {
+        font-size: 16px;
+        line-height: 1;
+        justify-content: space-evenly;
+    }
+    .cardsDestinosTexto h3 {
+        font-size: 1.3rem;
+    }
+    .mapaDestinos iframe {
+        height: 100%;
+        width: 100%;
+    }
+    .recomendacionesContenido h3 {
+        font-size: 1.6rem;
+    }
+    .recomendacionesContenido p {
+        font-size: 1rem;
+    }
+}
+
+/* Fin pagina Destinos */
+
+/* Pagina Acerca de */
+
+.acercaDeContenedor {
+    border: 1.8px solid #025159;
+    border-radius: 12px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    font-family: "Playfair Display", serif;
+    font-size: 1.3rem;
+    line-height: 1.8;
+    color: #BF3604;
+}
+
+.imagenPerfil {
+    border-radius: 50%;
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+}
+
+.textoPerfil {
+    margin-top: 80px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    color: #025939;
+}
+
+.imagenAcercaDeFinal {
+    object-fit: cover;
+    height: 500px;
+    border-radius: 5%;
+}
+
+/* MQ Pagina Acerca De */
+
+@media (max-width: 576px) {
+    .acercaDeContenedor {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .acercaDeContenedor p {
+        font-size: 1.1rem;
+    }
+    .textoPerfil {
+        margin-top: 10px;
+        align-self: center;
+    }
+    .imagenPerfil {
+        width: 250px;
+        height: 250px;
+        align-self: center;
+    }
+    .acercaDePerfil {
+        justify-content: center;
+        align-content: center;
+    }
+    .acercaDePerfilReverse {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-content: center;
+    }
+    .imagenAcercaDeFinal {
+        height: 400px;
+        width: 100%;
+        padding: 5px;
+    }
+}
+
+/* Fin pagina Acerca de */
+
+/* Pagina Contacto */
+
+.contactoContenedor {
+    border: 1px solid #025939;
+    border-radius: 10px;
+    padding: 150px;
+    margin: 10px;
+    color: #025159;
+    font-family: "Playfair Display", serif;
+}
+
+.nuestrosContactosContenedor {
+    background-color: #f5f5f5;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 50px;
+    margin: 20px;
+}
+
+.tituloContactoFormulario {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.3rem;
+}
+
+.nuestrosContactosContenido {
+    align-items: center;
+    color: #BF3604;
+    font-size: 1.1rem;
+}
+
+.contactoForm {
+    align-content: center;
+    gap: 10px;
+}
+
+.carruselContenedor {
+    border-radius: 10px;
+    margin: 20px;
+    background-color: rgba(191, 73, 4, 0.2);
+}
+
+.tituloCarrusel {
+    font-family: "Montserrat", sans-serif;
+    color: #BF3604;
+    font-size: 1.3rem;
+    text-align: center;
+    padding: 30px;
+}
+
+.carruselEstructura {
+    width: 60%;
+}
+
+.carruselIndicadores {
+    color:#FBF3E5;
+}
+
+.carruselIndicadores .active {
+    background-color: #BF3604;
+}
+
+.carruselControles {
+    width: 60px;
+    height: 60px;
+    background-color: #BF4904;
+    border-radius: 50%;
+    top: 50%;
+}
+
+.carousel-item {
+    height: 90vh;
+    padding: 40px;
+}
+
+.carruselImagenes img {
+    height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* MQ Pagina Contacto */
+
+@media (max-width: 576px) {
+    .contactoContenedor {
+        padding: 20px;
+    }
+    .tituloContactoFormulario {
+        font-size: 1.1rem;
+    }
+    .nuestrosContactosContenedor {
+        width: 80%;
+    }
+    .tituloCarrusel {
+        font-size: 1.1rem;
+    }
+    .carruselEstructura {
+        width: 90%;
+        height: 90vh;
+    }
+}
+
+/* Fin pagina Contacto */
+
+/* fin style main */
+
+/* style footer */
+
+footer {
+    font-family: "Playfair Display", serif;
+}
+
+.footerContenedor {
+    width: 100%;
+}
+
+.logoContenedor {
+    margin-bottom: 10px;
+}
+
+.logoFooter {
+    margin: 5px;
+    width: 7rem;
+}
+
+.navegadorFooter {
+    margin-bottom: 10px;
+}
+
+.navegadorFooter nav {
+    align-items: end;
+}
+
+.navegadorFooter a {
+    text-decoration: none;
+    color: #025159;
+    padding: 2px 7px 2px 7px;
+    font-family: "Playfair Display", serif;
+}
+
+.navegadorFooter li a:hover {
+    color: #BF4904;
+}
+
+.navegadorFooter ul {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 40px;
+    margin-right: 2rem;
+}
+
+.navegadorActivo {
+    border: 1px solid #BF4904;
+    border-radius: 5px;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
+    background-color: rgba(191, 73, 4, 0.1);
+}
+
+.footerRedes {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    padding-bottom: 10px;
+}
+
+.footerRedes img {
+    width: 70%;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
+    margin-right: 4px;
+}
+
+footer p {
+    text-align: right;
+    color: #025159;
+    margin-right: 2rem;
+}
+
+.footerRedes a:hover {
+    color: #BF4904;
+}
+
+.footerRedes img:hover {
+    box-shadow: 4px 6px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* MQ Footer */
+
+@media (max-width: 576px) {
+    .footerContenedor {
+        align-content: center;
+    }
+    .logoFooter {
+        width: 5rem;
+    }
+    .logoContenedor {
+        margin-bottom: 0;
+        text-align: center;
+    }
+    .navegadorFooter ul {
+        font-size: 15px;
+        justify-content: center;
+    }
+    .footerRedes {
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+    footer p {
+        text-align: center;
+        margin: 0;
+        padding: 30px;
+    }
+}
+
+/* fin style footer */
