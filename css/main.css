@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  position: relative;
+}
+
+.headerContainer {
+  margin: 10px;
+  height: 5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 7rem;
+  margin: 5px;
+}
+
+.navegadorHeader ul {
+  display: flex;
+  list-style: none;
+  flex-direction: row;
+  margin-right: 2rem;
+}
+
+/*# sourceMappingURL=main.css.map */

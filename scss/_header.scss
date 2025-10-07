@@ -1,0 +1,25 @@
+@use "mixins";
+
+header {
+    position: relative;
+}
+
+.headerContainer {
+    margin: 10px;
+    height: 5rem;
+    @include mixins.flex (row, space-between, center);
+}
+
+.logo {
+    width: 7rem;
+    margin: 5px;
+}
+
+.navegadorHeader {
+    ul {
+        display: flex;
+        list-style: none;
+        flex-direction: row;
+        margin-right: 2rem;
+    }
+}
