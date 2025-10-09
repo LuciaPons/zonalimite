@@ -1,4 +1,5 @@
 @use "mixins";
+@use "variables";
 
 header {
     position: relative;
@@ -7,7 +8,7 @@ header {
 .headerContainer {
     margin: 10px;
     height: 5rem;
-    @include mixins.flex (row, space-between, center);
+    @include flex (row, space-between, center);
 }
 
 .logo {
@@ -21,5 +22,79 @@ header {
         list-style: none;
         flex-direction: row;
         margin-right: 2rem;
+        a {
+            text-decoration: none;
+            color: variables.$color-detalles;
+            padding: 2px 7px;
+            font-family: variables.$fuente-texto;
+            @include hover-color(variables.$color-titulos);
+        }
     }
+}
+
+.navegadorActivo {
+     border: 1px solid $color-titulos;
+     border-radius: 5px;
+     background-color: rgba(191, 73, 4, 0.1);
+     @include box-shadow;
+}
+
+.bannerContainer {
+    position: relative;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.banner img {
+    width: 100%;
+    height: $altura-banner;
+    opacity: 0.6;
+    display: block;
+}
+
+.bannerContenido {
+    @include mixins.centrado-absoluto;
+    font-family: $fuente-titulos;
+    color: $color-texto;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 5px;
+    @include sombra-texto;
+}
+
+.botonSuscribirse {
+    margin: 5px;
+    padding: 8px;
+    font-family: $fuente-titulos;
+    background-color: $color-fondo;
+    color: $color-texto;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    @include box-shadow;
+    &:hover {
+        @include sombra-hover;
+    }
+}
+
+@media (max-width: 576px) {
+    .headerContainer {
+        @include flex-mobile (column, center);
+        margin: 5px;
+        height: 10rem;
+    }
+    .logo {
+        width: 5rem;
+    }
+    .navegadorHeader {
+        align-items: center;
+        ul {
+            font-size: 15px;
+        }
+    }
+    .banner img {
+        height: $altura-banner-mobile;
+    }
+
+
 }

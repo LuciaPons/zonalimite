@@ -28,5 +28,88 @@ header {
   flex-direction: row;
   margin-right: 2rem;
 }
+.navegadorHeader ul a {
+  text-decoration: none;
+  color: #025159;
+  padding: 2px 7px;
+  font-family: "Playfair Display", serif;
+}
+.navegadorHeader ul a:hover {
+  color: #BF4904;
+}
+
+.navegadorActivo {
+  border: 1px solid #BF4904;
+  border-radius: 5px;
+  background-color: rgba(191, 73, 4, 0.1);
+  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.bannerContainer {
+  position: relative;
+  width: 100%;
+  margin: 10px 0;
+}
+
+.banner img {
+  width: 100%;
+  height: 500px;
+  opacity: 0.6;
+  display: block;
+}
+
+.bannerContenido {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  color: #025939;
+  font-weight: bold;
+  font-size: 15px;
+  padding: 5px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.botonSuscribirse {
+  margin: 5px;
+  padding: 8px;
+  font-family: "Montserrat", sans-serif;
+  background-color: #FBF3E5;
+  color: #025939;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
+}
+.botonSuscribirse:hover {
+  box-shadow: 4px 6px 8px rgba(0, 0, 0, 0.4);
+}
+
+@media (max-width: 576px) {
+  .headerContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px;
+    height: 10rem;
+  }
+  .logo {
+    width: 5rem;
+  }
+  .navegadorHeader {
+    align-items: center;
+  }
+  .navegadorHeader ul {
+    font-size: 15px;
+  }
+  .banner img {
+    height: 300px;
+  }
+}
+body {
+  background-color: #FBF3E5;
+}
 
 /*# sourceMappingURL=main.css.map */

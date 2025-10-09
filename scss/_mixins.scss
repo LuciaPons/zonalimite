@@ -1,8 +1,8 @@
 @mixin flex($direction,$justify,$align){
-    display: flex;
-    flex-direction: $direction;
-    justify-content: $justify;
-    align-items: $align;
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
 }
 
 @mixin box-shadow {
@@ -11,6 +11,28 @@
 
 @mixin hover-color($color) {
     &:hover {
-    color: $color;
+      color: $color;
   }
+}
+
+@mixin sombra-hover {
+  box-shadow: 4px 6px 8px rgba(0, 0, 0, 0.4);
+}
+
+@mixin centrado-absoluto {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+@mixin sombra-texto {
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2)
+}
+
+@mixin flex-mobile ($direction,$align) {
+  display: flex;
+  flex-direction: $direction;
+  align-items: $align;
 }
