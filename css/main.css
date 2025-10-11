@@ -108,8 +108,157 @@ header {
     height: 300px;
   }
 }
+
 body {
   background-color: #FBF3E5;
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  color: #BF4904;
+  text-align: center;
+  font-size: 30px;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.cardsAventurasInicio {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 10px;
+}
+
+.cardsAventurasInicioContenido {
+  background-color: #f5f5f5;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.cardsAventurasInicioContenido a {
+  text-decoration: none;
+}
+.cardsAventurasInicioContenido h3 {
+  font-size: 1.4rem;
+  margin: 0 0 10px 0;
+  text-align: center;
+  text-decoration: none;
+  font-family: "Playfair Display", serif;
+  color: #025159;
+  font-weight: bold;
+}
+.cardsAventurasInicioContenido h3:hover {
+  color: #BF4904;
+}
+.cardsAventurasInicioContenido img {
+  height: 500px;
+  padding: 10px;
+  width: 100%;
+  object-fit: contain;
+}
+
+.cardsDestinoDestacado {
+  display: flex;
+  flex-wrap: wrap;
+  height: 500px;
+  gap: 2rem;
+  margin: 2rem;
+  padding: 1rem;
+  background-color: #f5f5f5;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.textoDestinoDestacado {
+  flex: 40%;
+  font-family: "Playfair Display", serif;
+  margin: 50px 0 0 10px;
+}
+.textoDestinoDestacado h4 {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+  font-family: "Montserrat", sans-serif;
+  color: #BF4904;
+}
+.textoDestinoDestacado p {
+  line-height: 1.6;
+  font-size: 1.3rem;
+  color: #025159;
+}
+
+.mapaDestinoDestacado {
+  flex: 1 1 55%;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.mapaDestinoDestacado iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.seccionInscribirse {
+  position: relative;
+  width: 100%;
+  margin: 10px 0;
+}
+.seccionInscribirse img {
+  width: 100%;
+  height: 500px;
+  opacity: 0.4;
+  display: block;
+}
+
+.seccionInscribirseContenido {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  color: #025939;
+  font-size: 20px;
+}
+
+.seccionInscribirseBoton {
+  margin: 5px;
+  padding: 8px;
+  font-family: "Montserrat", sans-serif;
+  background-color: #FBF3E5;
+  color: #BF4904;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
+}
+.seccionInscribirseBoton:hover {
+  box-shadow: 4px 6px 8px rgba(0, 0, 0, 0.4);
+}
+
+@media (max-width: 576px) {
+  .cardsAventurasInicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  .cardsAventurasInicioContenido {
+    width: 70%;
+  }
+  .cardsDestinoDestacado {
+    gap: 1px;
+    flex-direction: column;
+  }
+  .textoDestinoDestacado {
+    margin-top: 10px;
+  }
+  .textoDestinoDestacado p {
+    font-size: 1rem;
+    margin-bottom: 1px;
+  }
+  .mapaDestinoDestacado iframe {
+    height: 250px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

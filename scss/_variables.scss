@@ -1,13 +1,27 @@
+// Paleta de colores
 $color-fondo: #FBF3E5;
 $color-titulos: #BF4904;
 $color-texto: #025939;
 $color-detalles: #025159;
 $color-detalles-secundario: #BF3604;
+$color-fondo-cards: #f5f5f5;
 
+// Fuentes
 $fuente-titulos: "Montserrat", sans-serif;
 $fuente-texto: "Playfair Display", serif; 
 
+// Box model
 $espaciado-base: 10px;
+$border-radius: 12px;
+$border-radius-mapa: 8px;
+$padding-card: 1rem;
+$margim-card: 2rem;
 
+// Banner
 $altura-banner: 500px;
 $altura-banner-mobile: 300px;
+
+// Inicio
+$altura-card-inicio: 500px;
+$gap-card: 2rem;
+$gap-card-mobile: 15px;

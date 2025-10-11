@@ -1,3 +1,6 @@
+@use "variables";
+
+// Flex
 @mixin flex($direction,$justify,$align){
   display: flex;
   flex-direction: $direction;
@@ -5,9 +8,30 @@
   align-items: $align;
 }
 
+@mixin flex-mobile ($direction,$align) {
+  display: flex;
+  flex-direction: $direction;
+  align-items: $align;
+}
+
+// Sombras
 @mixin box-shadow {
   box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
 }
+
+@mixin sombra-hover {
+  box-shadow: 4px 6px 8px rgba(0, 0, 0, 0.4);
+}
+
+@mixin sombra-texto {
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2)
+}
+
+@mixin cards-shadow {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+// Animaciones
 
 @mixin hover-color($color) {
     &:hover {
@@ -15,9 +39,7 @@
   }
 }
 
-@mixin sombra-hover {
-  box-shadow: 4px 6px 8px rgba(0, 0, 0, 0.4);
-}
+// Centrados
 
 @mixin centrado-absoluto {
   position: absolute;
@@ -27,12 +49,45 @@
   text-align: center;
 }
 
-@mixin sombra-texto {
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2)
+// Textos
+
+@mixin h2 {
+  font-family: variables.$fuente-titulos;
+  color: variables.$color-titulos;
+  text-align: center;
+  font-size: 30px;
+  padding: 10px;
+  margin-top: 10px;
 }
 
-@mixin flex-mobile ($direction,$align) {
-  display: flex;
-  flex-direction: $direction;
-  align-items: $align;
+@mixin h3 ($font-size, $margin, $align) {
+  font-size: $font-size;
+  margin: $margin;
+  text-align: $align;
+  text-decoration: none;
+  font-family: variables.$fuente-texto;
+  color: variables.$color-detalles;
+}
+
+// Botones
+@mixin boton-var-1 {
+  margin: 5px;
+  padding: 8px;
+  font-family: variables.$fuente-titulos;
+  background-color: variables.$color-fondo;
+  color: variables.$color-texto;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+@mixin boton-var-2 {
+  margin: 5px;
+  padding: 8px;
+  font-family: variables.$fuente-titulos;
+  background-color: variables.$color-fondo;
+  color: variables.$color-titulos;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
 }
