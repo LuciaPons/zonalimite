@@ -89,8 +89,12 @@ header {
             font-size: 15px;
         }
     }
-    
+
     .banner img {
         height: variables.$altura-banner-mobile;
+    }
+
+    .bannerContenido h1 {
+        font-size: 20px;
     }
 }
