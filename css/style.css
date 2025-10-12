@@ -176,7 +176,7 @@ font-family: "Playfair Display", serif; */
     display: block;
 }
 
-.cardsDestinosTexto {
+/*.cardsDestinosTexto {
     position: absolute;
     top: 0;
     left: 0;
@@ -192,8 +192,8 @@ font-family: "Playfair Display", serif; */
     line-height: 1.6;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2)
 }
-
-.cardsDestinosTexto h3 {
+*/
+/*.cardsDestinosTexto h3 {
   font-size: 1.8rem;
   color: #025159;
   margin-bottom: 10px;
@@ -265,7 +265,7 @@ font-family: "Playfair Display", serif; */
     .recomendacionesContenido p {
         font-size: 1rem;
     }
-}
+}*/
 
 /* Fin pagina Destinos */
 

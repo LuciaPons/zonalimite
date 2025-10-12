@@ -1,2 +1,112 @@
 @use "mixins";
 @use "variables";
+
+.cardsDestinosContenedor {
+    display: flex;
+    font-family: variables.$fuente-texto;
+    margin: 10px;
+    padding: 10px;
+    gap: variables.$gap-columnas;
+    background-color: variables.$color-fondo-cards;
+    border-radius: variables.$border-radius;
+    @include mixins.cards-shadow;
+}
+
+.cardsDestinosImagenConTexto {
+    position: relative;
+    flex: 1 1 60%;
+    overflow: hidden;
+}
+
+.cardsDestinosImagenConTexto img {
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.cardsDestinosTexto {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    background-color: variables.$color-caja-semi-trasparente;
+    color: variables.$color-detalles;
+    width: 100%;
+    height: 100%;
+    @include mixins.flex(column, center, start);
+    font-size: 1.3rem;
+    line-height: 1.6;
+    @include mixins.sombra-texto;
+
+    h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: variables.$color-detalles;
+    }
+
+    a {
+    text-decoration: none;
+    font-family: variables.$fuente-texto;
+    color: variables.$color-titulos;
+    }
+}
+
+.recomendacionesContenedor {
+    display: block;
+    background-color: variables.$color-caja-color-solido;
+    padding: 40px;
+    margin: 20px;
+    border-radius: variables.$border-radius;
+    @include mixins.sombra-caja-color;
+}
+
+.recomendacionesContenido {
+    text-align: center;
+    font-size: 1rem;
+    font-family: variables.$fuente-texto;
+    color: variables.$color-detalles;
+
+    h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    }
+
+    p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: variables.$color-detalles-secundario;
+    }
+
+    a {
+    color: variables.$color-detalles;
+    font-family: variables.$fuente-titulos;
+    font-weight: bold;
+    text-decoration: underline;
+    }
+}
+
+@media (max-width: 576px) {
+    .cardsDestinosContenedor {
+        height: 500px;
+        flex-direction: column;
+    }
+    .cardsDestinosTexto {
+        font-size: 16px;
+        line-height: 1;
+        justify-content: space-evenly;
+    }
+    .cardsDestinosTexto h3 {
+        font-size: 1.3rem;
+    }
+    .mapaDestinos iframe {
+        height: 100%;
+        width: 100%;
+    }
+    .recomendacionesContenido h3 {
+        font-size: 1.6rem;
+    }
+    .recomendacionesContenido p {
+        font-size: 1rem;
+    }
+}
