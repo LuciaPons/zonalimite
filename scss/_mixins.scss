@@ -1,6 +1,6 @@
 @use "variables";
 
-// Flex
+// Flex - Grid
 @mixin flex($direction,$justify,$align){
   display: flex;
   flex-direction: $direction;
@@ -12,6 +12,22 @@
   display: flex;
   flex-direction: $direction;
   align-items: $align;
+}
+
+@mixin grid-base ($rows, $col, $align, $font, $color) {
+  display: grid;
+  grid-template-columns: $col;
+  grid-template-rows: $rows;
+  text-align: $align;
+  font-family: $font;
+  color: $color;
+}
+
+@mixin grid-area ($rows,$col,$areas) {
+  display: grid;
+  grid-template-columns: $col;
+  grid-template-rows: $rows;
+  grid-template-areas: $areas;
 }
 
 // Sombras
@@ -67,6 +83,19 @@
   text-decoration: none;
   font-family: variables.$fuente-texto;
   color: variables.$color-detalles;
+}
+
+@mixin h3-mobile ($font, $margin, $height) {
+  font-size: $font;
+  margin: $margin;
+  height: $height;
+}
+
+@mixin p ($align, $size, $font, $color) {
+  text-align: $align;
+  font-size: $size;
+  font-family: $font;
+  color: $color;
 }
 
 // Botones

@@ -61,7 +61,7 @@ font-family: "Playfair Display", serif; */
     color: #025159;
 }
 
-.botonContenido {
+/*.botonContenido {
     display: block;
     margin: 10px auto;
     padding: 8px;
@@ -73,7 +73,7 @@ font-family: "Playfair Display", serif; */
     cursor: pointer;
     box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
 }
-
+*/
 .botonContenido:hover {
     box-shadow: 4px 6px 8px rgba(0, 0, 0, 0.4);
 }
@@ -116,7 +116,7 @@ font-family: "Playfair Display", serif; */
 
 /* MQ Pagina Aventuras */
 
-@media (max-width: 576px) {
+/*@media (max-width: 576px) {
     .cardsAventurasContenedor{
         grid-template-rows: 1fr 0.3fr 0.5fr;
         grid-template-columns: 2fr;
@@ -147,7 +147,7 @@ font-family: "Playfair Display", serif; */
         margin: 6px;
         font-size: 14px;
     }
-}
+}*/
 
 /* Fin pagina Aventuras */
 
