@@ -1,0 +1,108 @@
+@use "variables";
+@use "mixins";
+
+footer {
+    font-family: variables.$fuente-texto;
+    
+    p{
+        text-align: right;
+        color: variables.$color-detalles;
+        margin-right: 2rem;
+    }
+}
+
+.footerContenedor {
+    width: 100%;
+}
+
+.logoContenedor {
+    margin-bottom: 10px;
+}
+
+.logoFooter {
+    margin: 5px;
+    width: 7rem;
+}
+
+.navegadorFooter {
+    margin-bottom: variables.$espaciado-base;
+
+    nav {
+        align-items: end;
+    }
+
+    a {
+    text-decoration: none;
+    color: variables.$color-detalles;
+    padding: 2px 7px 2px 7px;
+    font-family: variables.$fuente-texto;
+    }
+
+    ul {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 40px 2rem 0 0;
+    }
+
+    &:hover {
+        color: variables.$color-titulos;
+    }
+}
+
+.navegadorActivo {
+    border: 1px solid variables.$color-titulos;
+    border-radius: 5px;
+    @include mixins.box-shadow;
+    background-color: variables.$color-caja-color-solido;
+}
+
+.footerRedes {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    padding-bottom: 10px;
+
+    img {
+    width: 70%;
+    @include mixins.box-shadow;
+    margin-right: 4px;
+    &:hover {
+        @include mixins.sombra-hover
+    }
+    }
+
+
+    a {
+        &:hover {
+        color: variables.$color-titulos;
+    }
+    }
+}
+
+@media (max-width: 576px) {
+    .footerContenedor {
+        align-content: center;
+    }
+    .logoFooter {
+        width: 5rem;
+    }
+    .logoContenedor {
+        margin-bottom: 0;
+        text-align: center;
+    }
+    .navegadorFooter ul {
+        font-size: 15px;
+        justify-content: center;
+    }
+    .footerRedes {
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+    footer p {
+        text-align: center;
+        margin: 0;
+        padding: 30px;
+    }
+}
