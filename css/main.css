@@ -280,9 +280,7 @@ h2 {
 
 .gridAreaHtres {
   grid-area: htres;
-  font-family: "Playfair Display", serif;
   font-weight: bold;
-  color: #025159;
   font-size: 1.8rem;
   margin: 30px 0 0 0;
   text-align: center;
@@ -488,6 +486,75 @@ h2 {
   }
   .recomendacionesContenido p {
     font-size: 1rem;
+  }
+}
+.acercaDeContenedor {
+  border: 1.8px solid #025159;
+  border-radius: 12px;
+  text-align: center;
+  font-size: 1.3rem;
+  font-family: "Playfair Display", serif;
+  color: #BF3604;
+  margin: 10px;
+  padding: 10px;
+  line-height: 1.8;
+}
+
+.imagenPerfil {
+  border-radius: 50%;
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+}
+
+.textoPerfil {
+  margin-top: 80px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  color: #025939;
+}
+
+.imagenAcercaDeFinal {
+  object-fit: cover;
+  height: 500px;
+  border-radius: 5%;
+}
+
+@media (max-width: 576px) {
+  .acercaDeContenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .acercaDeContenedor p {
+    font-size: 1.1rem;
+  }
+  .textoPerfil {
+    margin-top: 10px;
+    align-self: center;
+  }
+  .imagenPerfil {
+    width: 250px;
+    height: 250px;
+    align-self: center;
+  }
+  .acercaDePerfil {
+    justify-content: center;
+    align-content: center;
+  }
+  .acercaDePerfilReverse {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .imagenAcercaDeFinal {
+    height: 400px;
+    width: 100%;
+    padding: 5px;
   }
 }
 

@@ -1,2 +1,69 @@
 @use "mixins";
 @use "variables";
+
+.acercaDeContenedor {
+    border: 1.8px solid variables.$color-detalles;
+    border-radius: variables.$border-radius;
+    @include mixins.p (center, 1.3rem, variables.$fuente-texto, variables.$color-detalles-secundario);
+    margin: 10px;
+    padding: 10px;
+    line-height: 1.8;
+}
+
+.imagenPerfil {
+    border-radius: 50%;
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+}
+
+.textoPerfil {
+    margin-top: 80px;
+    padding: 20px;
+    background-color: variables.$color-caja-perfil;
+    border-radius: variables.$border-radius;
+    @include mixins.cards-shadow;
+    color: variables.$color-texto;
+}
+
+.imagenAcercaDeFinal {
+    object-fit: cover;
+    height: 500px;
+    border-radius: 5%;
+}
+
+@media (max-width: 576px) {
+    .acercaDeContenedor {
+        @include mixins.flex(column, center, center);
+
+        p{
+            font-size: 1.1rem;
+        }
+    }
+    
+    .textoPerfil {
+        margin-top: 10px;
+        align-self: center;
+    }
+
+    .imagenPerfil {
+        width: 250px;
+        height: 250px;
+        align-self: center;
+    }
+
+    .acercaDePerfil {
+        justify-content: center;
+        align-content: center;
+    }
+
+    .acercaDePerfilReverse {
+        @include mixins.flex(column-reverse, center, center);
+    }
+
+    .imagenAcercaDeFinal {
+        height: 400px;
+        width: 100%;
+        padding: 5px;
+    }
+}
