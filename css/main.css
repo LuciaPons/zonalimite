@@ -557,5 +557,101 @@ h2 {
     padding: 5px;
   }
 }
+.contactoContenedor {
+  border: 1px solid #025939;
+  border-radius: 10px;
+  padding: 150px;
+  margin: 10px;
+  color: #025159;
+  font-family: "Playfair Display", serif;
+}
+
+.nuestrosContactosContenedor {
+  background-color: #f5f5f5;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 50px;
+  margin: 20px;
+}
+
+.tituloContactoFormulario {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.3rem;
+}
+
+.nuestrosContactosContenido {
+  align-items: center;
+  color: #BF3604;
+  font-size: 1.1rem;
+}
+
+.contactoForm {
+  align-content: center;
+  gap: 10px;
+}
+
+.carruselContenedor {
+  border-radius: 10px;
+  margin: 20px;
+  background-color: rgba(191, 73, 4, 0.2);
+}
+
+.tituloCarrusel {
+  font-family: "Montserrat", sans-serif;
+  color: #BF3604;
+  font-size: 1.3rem;
+  text-align: center;
+  padding: 30px;
+}
+
+.carruselEstructura {
+  width: 60%;
+}
+
+.carruselIndicadores {
+  color: #FBF3E5;
+}
+
+.carruselIndicadores .active {
+  background-color: #BF3604;
+}
+
+.carruselControles {
+  width: 60px;
+  height: 60px;
+  background-color: #BF3604;
+  border-radius: 50%;
+  top: 50%;
+}
+
+.carousel-item {
+  height: 90vh;
+  padding: 40px;
+}
+
+.carruselImagenes img {
+  height: 500px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+@media (max-width: 576px) {
+  .contactoContenedor {
+    padding: 20px;
+  }
+  .tituloContactoFormulario {
+    font-size: 1.1rem;
+  }
+  .nuestrosContactosContenedor {
+    width: 80%;
+  }
+  .tituloCarrusel {
+    font-size: 1.1rem;
+  }
+  .carruselEstructura {
+    width: 90%;
+    height: 90vh;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */

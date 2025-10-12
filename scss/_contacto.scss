@@ -1,2 +1,99 @@
 @use "mixins";
 @use "variables";
+
+.contactoContenedor {
+    border: 1px solid variables.$color-texto;
+    border-radius: 10px;
+    padding: 150px;
+    margin: variables.$espaciado-base;
+    color: variables.$color-detalles;
+    font-family: variables.$fuente-texto;
+}
+
+.nuestrosContactosContenedor {
+    background-color: variables.$color-fondo-cards;
+    border-radius: variables.$border-radius;
+    @include mixins.cards-shadow;
+    padding: 50px;
+    margin: 20px;
+}
+
+.tituloContactoFormulario {
+    font-family: variables.$fuente-titulos;
+    font-size: 1.3rem;
+}
+
+.nuestrosContactosContenido {
+    align-items: center;
+    color: variables.$color-detalles-secundario;
+    font-size: 1.1rem;
+}
+
+.contactoForm {
+    align-content: center;
+    gap: 10px;
+}
+
+.carruselContenedor {
+    border-radius: 10px;
+    margin: 20px;
+    background-color: variables.$color-caja-color-solido;
+}
+
+.tituloCarrusel {
+    font-family: variables.$fuente-titulos;
+    color: variables.$color-detalles-secundario;
+    font-size: 1.3rem;
+    text-align: center;
+    padding: 30px;
+}
+
+.carruselEstructura {
+    width: 60%;
+}
+
+.carruselIndicadores {
+    color:variables.$color-fondo;
+}
+
+.carruselIndicadores .active {
+    background-color: #BF3604;
+}
+
+.carruselControles {
+    width: 60px;
+    height: 60px;
+    background-color: variables.$color-detalles-secundario;
+    border-radius: 50%;
+    top: 50%;
+}
+
+.carousel-item {
+    height: 90vh;
+    padding: 40px;
+}
+
+.carruselImagenes img {
+    height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+@media (max-width: 576px) {
+    .contactoContenedor {
+        padding: 20px;
+    }
+    .tituloContactoFormulario {
+        font-size: 1.1rem;
+    }
+    .nuestrosContactosContenedor {
+        width: 80%;
+    }
+    .tituloCarrusel {
+        font-size: 1.1rem;
+    }
+    .carruselEstructura {
+        width: 90%;
+        height: 90vh;
+    }
+}
