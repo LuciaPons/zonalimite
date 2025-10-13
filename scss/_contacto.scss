@@ -39,7 +39,8 @@
 .carruselContenedor {
     border-radius: 10px;
     margin: 20px;
-    background-color: variables.$color-caja-color-solido;
+    background: variables.$color-titulos;
+    background: radial-gradient(circle,rgba(191, 73, 4, 0.25) 0%, rgba(191, 54, 4, 0.45) 100%);
 }
 
 .tituloCarrusel {

@@ -26,6 +26,10 @@
     }
 }
 
+.mapaDestinos {
+    flex: 1 1 40%;
+}
+
 .cardsDestinosTexto {
     position: absolute;
     top: 0;
@@ -36,13 +40,15 @@
     width: 100%;
     height: 100%;
     @include mixins.flex(column, center, start);
-    font-size: 1.3rem;
-    line-height: 1.6;
     @include mixins.sombra-texto;
     h3 {
         font-size: 1.8rem;
         margin-bottom: 10px;
         color: variables.$color-detalles;
+    }
+    p{
+        line-height: 1.6;
+        font-size: 1.3rem;
     }
     a {
         text-decoration: none;
@@ -53,7 +59,8 @@
 
 .recomendacionesContenedor {
     display: block;
-    background-color: variables.$color-caja-color-solido;
+    background: variables.$color-titulos;
+    background: radial-gradient(circle,rgba(191, 73, 4, 0.25) 0%, rgba(191, 54, 4, 0.45) 100%);
     padding: 40px;
     margin: 20px;
     border-radius: variables.$border-radius;
@@ -70,7 +77,7 @@
         margin-bottom: 20px;
     }
     p {
-        font-size: 1.2rem;
+        font-size: 1.4rem;
         line-height: 1.6;
         margin-bottom: 15px;
         color: variables.$color-detalles-secundario;
@@ -92,12 +99,15 @@
         }
     }
     .cardsDestinosTexto {
-        font-size: 16px;
-        line-height: 1;
         justify-content: space-evenly;
-    }
-    .cardsDestinosTexto h3 {
-        font-size: 1.3rem;
+        padding: 10px;
+        h3 {
+            font-size: 1.2rem;
+        }
+        p{
+            font-size: 1rem;
+            line-height: 1rem;
+        }
     }
     .mapaDestinos iframe {
         height: 100%;

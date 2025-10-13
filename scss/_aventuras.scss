@@ -8,7 +8,8 @@
     column-gap: variables.$gap-columnas;
     margin: variables.$espaciado-columnas;
     padding: variables.$espaciado-columnas;
-    background-color: variables.$color-fondo-cards;
+    background-color: variables.$color-cards-gradiente;
+    background: radial-gradient(circle,rgba(235, 228, 228, 1) 0%, rgba(245, 245, 245, 1) 100%);
     border-radius: variables.$border-radius;
     @include mixins.cards-shadow;
 }
