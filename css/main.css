@@ -491,31 +491,28 @@ h2 {
     height: 500px;
     flex-direction: column;
   }
+  .cardsDestinosTexto {
+    justify-content: space-evenly;
+    padding: 10px;
+  }
+  .cardsDestinosTexto h3 {
+    font-size: 1.2rem;
+  }
+  .cardsDestinosTexto p {
+    font-size: 1rem;
+    line-height: 1rem;
+  }
+  .mapaDestinos iframe {
+    height: 100%;
+    width: 100%;
+  }
+  .recomendacionesContenido h3 {
+    font-size: 1.6rem;
+  }
+  .recomendacionesContenido p {
+    font-size: 1rem;
+  }
 }
-.cardsDestinosTexto {
-  justify-content: space-evenly;
-  padding: 10px;
-}
-.cardsDestinosTexto h3 {
-  font-size: 1.2rem;
-}
-.cardsDestinosTexto p {
-  font-size: 1rem;
-  line-height: 1rem;
-}
-
-.mapaDestinos iframe {
-  height: 100%;
-  width: 100%;
-}
-
-.recomendacionesContenido h3 {
-  font-size: 1.6rem;
-}
-.recomendacionesContenido p {
-  font-size: 1rem;
-}
-
 /* Fin style pagina destinos */
 /* Inicio style pagina acerca-de */
 .acercaDeContenedor {
