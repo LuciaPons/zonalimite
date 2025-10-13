@@ -1,6 +1,8 @@
 @use "mixins";
 @use "variables";
 
+/* Inicio style pagina destinos */
+
 .cardsDestinosContenedor {
     display: flex;
     font-family: variables.$fuente-texto;
@@ -16,12 +18,12 @@
     position: relative;
     flex: 1 1 60%;
     overflow: hidden;
-}
-
-.cardsDestinosImagenConTexto img {
-    width: 100%;
-    object-fit: cover;
-    display: block;
+    img {
+        width: 100%;
+        object-fit: cover;
+        display: block;
+        opacity: 0.4;
+    }
 }
 
 .cardsDestinosTexto {
@@ -37,17 +39,15 @@
     font-size: 1.3rem;
     line-height: 1.6;
     @include mixins.sombra-texto;
-
     h3 {
-    font-size: 1.8rem;
-    margin-bottom: 10px;
-    color: variables.$color-detalles;
+        font-size: 1.8rem;
+        margin-bottom: 10px;
+        color: variables.$color-detalles;
     }
-
     a {
-    text-decoration: none;
-    font-family: variables.$fuente-texto;
-    color: variables.$color-titulos;
+        text-decoration: none;
+        font-family: variables.$fuente-texto;
+        color: variables.$color-titulos;
     }
 }
 
@@ -65,31 +65,31 @@
     font-size: 1rem;
     font-family: variables.$fuente-texto;
     color: variables.$color-detalles;
-
     h3 {
-    font-size: 1.8rem;
-    margin-bottom: 20px;
+        font-size: 1.8rem;
+        margin-bottom: 20px;
     }
-
     p {
-    font-size: 1.2rem;
-    line-height: 1.6;
-    margin-bottom: 15px;
-    color: variables.$color-detalles-secundario;
+        font-size: 1.2rem;
+        line-height: 1.6;
+        margin-bottom: 15px;
+        color: variables.$color-detalles-secundario;
     }
-
     a {
-    color: variables.$color-detalles;
-    font-family: variables.$fuente-titulos;
-    font-weight: bold;
-    text-decoration: underline;
+        color: variables.$color-detalles;
+        font-family: variables.$fuente-titulos;
+        font-weight: bold;
+        text-decoration: underline;
     }
 }
+
+/* Media queries pagina destinos */
 
 @media (max-width: 576px) {
     .cardsDestinosContenedor {
         height: 500px;
         flex-direction: column;
+        }
     }
     .cardsDestinosTexto {
         font-size: 16px;
@@ -103,10 +103,13 @@
         height: 100%;
         width: 100%;
     }
-    .recomendacionesContenido h3 {
-        font-size: 1.6rem;
+    .recomendacionesContenido {
+        h3 {
+            font-size: 1.6rem;
+        }
+        p {
+            font-size: 1rem;
+        }
     }
-    .recomendacionesContenido p {
-        font-size: 1rem;
-    }
-}
+
+/* Fin style pagina destinos */

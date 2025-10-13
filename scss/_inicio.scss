@@ -6,6 +6,8 @@ body {
     background-color: variables.$color-fondo;
 }
 
+/* Inicio style pagina inicio */
+
 h2 {
     @include mixins.h2;
 }
@@ -19,17 +21,14 @@ h2 {
     background-color: variables.$color-fondo-cards;
     border-radius: variables.$border-radius;
     @include mixins.cards-shadow;
-
     a {
         text-decoration: none;
     }
-
     h3 {
         @include mixins.h3(1.4rem, 0 0 10px 0, center);
         font-weight: bold;
         @include mixins.hover-color (variables.$color-titulos);
     }
-
     img {
         height: variables.$altura-card-inicio;
         padding: variables.$espaciado-base;
@@ -54,14 +53,12 @@ h2 {
     flex: 40%;
     font-family: variables.$fuente-texto;
     margin: 50px 0 0 10px;
-
     h4 {
         font-size: 1.4rem;;
         margin-bottom: 0.5rem;
         font-family: variables.$fuente-titulos;
         color: variables.$color-titulos;
     }
-
     p {
         line-height: 1.6;
         font-size: 1.3rem;
@@ -73,7 +70,6 @@ h2 {
     flex: 1 1 55%;
     border-radius: variables.$border-radius-mapa;
     overflow: hidden;
-
     iframe {
         width: 100%;
         height: 100%;
@@ -85,7 +81,6 @@ h2 {
     position: relative;
     width: 100%;
     margin: 10px 0;
-
     img {
         width: 100%;
         height: 500px;
@@ -109,22 +104,20 @@ h2 {
     }
 }
 
-@media (max-width: 576px) {
+/* Media queries pagina inicio */
 
+@media (max-width: 576px) {
     .cardsAventurasInicio {
         @include mixins.flex-mobile (column,center);
         gap: variables.$gap-card-mobile;
     }
-
     .cardsAventurasInicioContenido {
         width: 70%;
     }
-
     .cardsDestinoDestacado {
         gap: 1px;
         flex-direction: column;
     }
-
     .textoDestinoDestacado {
         margin-top: 10px;
         p {
@@ -132,9 +125,10 @@ h2 {
             margin-bottom: 1px;
         }
     }
-    
     .mapaDestinoDestacado iframe {
         height: 250px;
     }
     
 }
+
+/* Fin style pagina inicio */

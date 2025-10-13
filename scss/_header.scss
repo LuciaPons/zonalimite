@@ -1,6 +1,8 @@
 @use "mixins";
 @use "variables";
 
+/* Inicio style header */
+
 header {
     position: relative;
 }
@@ -22,7 +24,6 @@ header {
         list-style: none;
         flex-direction: row;
         margin-right: 2rem;
-
         a {
             text-decoration: none;
             color: variables.$color-detalles;
@@ -71,30 +72,29 @@ header {
     }
 }
 
+/* Media queries header */
+
 @media (max-width: 576px) {
-    
     .headerContainer {
         @include mixins.flex-mobile (column, center);
         margin: 5px;
         height: 10rem;
     }
-
     .logo {
         width: 5rem;
     }
-
     .navegadorHeader {
         align-items: center;
         ul {
             font-size: 15px;
         }
     }
-
     .banner img {
         height: variables.$altura-banner-mobile;
     }
-
     .bannerContenido h1 {
         font-size: 20px;
     }
 }
+
+/* Fin style header */

@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 
+/* Inicio style header */
 header {
   position: relative;
 }
@@ -87,6 +88,7 @@ header {
   box-shadow: 4px 6px 8px rgba(0, 0, 0, 0.4);
 }
 
+/* Media queries header */
 @media (max-width: 576px) {
   .headerContainer {
     display: flex;
@@ -111,10 +113,12 @@ header {
     font-size: 20px;
   }
 }
+/* Fin style header */
 body {
   background-color: #FBF3E5;
 }
 
+/* Inicio style pagina inicio */
 h2 {
   font-family: "Montserrat", sans-serif;
   color: #BF4904;
@@ -237,6 +241,7 @@ h2 {
   box-shadow: 4px 6px 8px rgba(0, 0, 0, 0.4);
 }
 
+/* Media queries pagina inicio */
 @media (max-width: 576px) {
   .cardsAventurasInicio {
     display: flex;
@@ -262,6 +267,8 @@ h2 {
     height: 250px;
   }
 }
+/* Fin style pagina inicio */
+/* Inicio style pagina aventuras */
 .cardsAventurasContenedor {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -317,7 +324,10 @@ h2 {
   box-shadow: 4px 6px 8px rgba(0, 0, 0, 0.4);
 }
 
-.htresPreguntasFrecuentes {
+.seccionInscribirseAventuras {
+  width: 80%;
+}
+.seccionInscribirseAventuras h3 {
   font-size: 1.4rem;
   margin: 10px;
   text-align: center;
@@ -340,10 +350,6 @@ h2 {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-.seccionInscribirseAventuras {
-  width: 80%;
-}
-
 .preguntasFrecuentesPregunta {
   font-weight: bold;
   font-family: "Playfair Display", serif;
@@ -354,6 +360,7 @@ h2 {
   margin: 15px;
 }
 
+/* Media queries aventuras */
 @media (max-width: 576px) {
   .cardsAventurasContenedor {
     display: grid;
@@ -384,6 +391,8 @@ h2 {
     font-size: 14px;
   }
 }
+/* Fin style pagina aventuras */
+/* Inicio style pagina destinos */
 .cardsDestinosContenedor {
   display: flex;
   font-family: "Playfair Display", serif;
@@ -400,11 +409,11 @@ h2 {
   flex: 1 1 60%;
   overflow: hidden;
 }
-
 .cardsDestinosImagenConTexto img {
   width: 100%;
   object-fit: cover;
   display: block;
+  opacity: 0.4;
 }
 
 .cardsDestinosTexto {
@@ -467,30 +476,37 @@ h2 {
   text-decoration: underline;
 }
 
+/* Media queries pagina destinos */
 @media (max-width: 576px) {
   .cardsDestinosContenedor {
     height: 500px;
     flex-direction: column;
   }
-  .cardsDestinosTexto {
-    font-size: 16px;
-    line-height: 1;
-    justify-content: space-evenly;
-  }
-  .cardsDestinosTexto h3 {
-    font-size: 1.3rem;
-  }
-  .mapaDestinos iframe {
-    height: 100%;
-    width: 100%;
-  }
-  .recomendacionesContenido h3 {
-    font-size: 1.6rem;
-  }
-  .recomendacionesContenido p {
-    font-size: 1rem;
-  }
 }
+.cardsDestinosTexto {
+  font-size: 16px;
+  line-height: 1;
+  justify-content: space-evenly;
+}
+
+.cardsDestinosTexto h3 {
+  font-size: 1.3rem;
+}
+
+.mapaDestinos iframe {
+  height: 100%;
+  width: 100%;
+}
+
+.recomendacionesContenido h3 {
+  font-size: 1.6rem;
+}
+.recomendacionesContenido p {
+  font-size: 1rem;
+}
+
+/* Fin style pagina destinos */
+/* Inicio style pagina acerca-de */
 .acercaDeContenedor {
   border: 1.8px solid #025159;
   border-radius: 12px;
@@ -525,6 +541,7 @@ h2 {
   border-radius: 5%;
 }
 
+/* Media queries pagina acerca-de */
 @media (max-width: 576px) {
   .acercaDeContenedor {
     display: flex;
@@ -560,6 +577,8 @@ h2 {
     padding: 5px;
   }
 }
+/* Fin style pagina acerca-de */
+/* Inicio style pagina contacto */
 .contactoContenedor {
   border: 1px solid #025939;
   border-radius: 10px;
@@ -638,6 +657,7 @@ h2 {
   border-radius: 10px;
 }
 
+/* Media queries pagina contacto */
 @media (max-width: 576px) {
   .contactoContenedor {
     padding: 20px;
@@ -656,6 +676,8 @@ h2 {
     height: 90vh;
   }
 }
+/* Fin style pagina contacto */
+/* Inicio style footer */
 footer {
   font-family: "Playfair Display", serif;
 }
@@ -726,6 +748,7 @@ footer p {
   color: #BF4904;
 }
 
+/* Media queries footer */
 @media (max-width: 576px) {
   .footerContenedor {
     align-content: center;
@@ -751,5 +774,6 @@ footer p {
     padding: 30px;
   }
 }
+/* Fin style footer */
 
 /*# sourceMappingURL=main.css.map */

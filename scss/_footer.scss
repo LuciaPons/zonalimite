@@ -1,9 +1,10 @@
 @use "variables";
 @use "mixins";
 
+/* Inicio style footer */
+
 footer {
     font-family: variables.$fuente-texto;
-    
     p{
         text-align: right;
         color: variables.$color-detalles;
@@ -26,18 +27,15 @@ footer {
 
 .navegadorFooter {
     margin-bottom: variables.$espaciado-base;
-
     nav {
         align-items: end;
     }
-
     a {
     text-decoration: none;
     color: variables.$color-detalles;
     padding: 2px 7px 2px 7px;
     font-family: variables.$fuente-texto;
     }
-
     ul {
     display: flex;
     list-style: none;
@@ -45,7 +43,6 @@ footer {
     justify-content: flex-end;
     margin: 40px 2rem 0 0;
     }
-
     &:hover {
         color: variables.$color-titulos;
     }
@@ -63,23 +60,22 @@ footer {
     flex-direction: row;
     gap: 5px;
     padding-bottom: 10px;
-
     img {
     width: 70%;
     @include mixins.box-shadow;
     margin-right: 4px;
     &:hover {
         @include mixins.sombra-hover
+        }
     }
-    }
-
-
     a {
         &:hover {
         color: variables.$color-titulos;
-    }
+        }
     }
 }
+
+/* Media queries footer */
 
 @media (max-width: 576px) {
     .footerContenedor {
@@ -106,3 +102,5 @@ footer {
         padding: 30px;
     }
 }
+
+/* Fin style footer */

@@ -1,6 +1,8 @@
 @use "mixins";
 @use "variables";
 
+/* Inicio style pagina contacto */
+
 .contactoContenedor {
     border: 1px solid variables.$color-texto;
     border-radius: 10px;
@@ -57,7 +59,7 @@
 }
 
 .carruselIndicadores .active {
-    background-color: #BF3604;
+    background-color: variables.$color-detalles-secundario;
 }
 
 .carruselControles {
@@ -79,6 +81,8 @@
     border-radius: 10px;
 }
 
+/* Media queries pagina contacto */
+
 @media (max-width: 576px) {
     .contactoContenedor {
         padding: 20px;
@@ -97,3 +101,5 @@
         height: 90vh;
     }
 }
+
+/* Fin style pagina contacto */
