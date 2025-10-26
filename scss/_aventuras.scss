@@ -17,7 +17,8 @@
 .gridAreaImg {
     grid-area: img;
     width: 100%;
-    border-radius: variables.$border-radius; 
+    border-radius: variables.$border-radius;
+    @include mixins.cards-shadow; 
 }
 
 .gridAreaHtres {

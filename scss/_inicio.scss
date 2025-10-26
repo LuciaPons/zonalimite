@@ -1,12 +1,27 @@
 @use "mixins";
 @use "variables";
 
-
 body {
     background-color: variables.$color-fondo;
 }
 
 /* Inicio style pagina inicio */
+.lineaConTexto {
+    display: flex;
+    align-items: center;
+    h1 {
+        @include mixins.h1;
+        white-space: nowrap;
+    }
+}
+
+.lineaConTexto::before,
+.lineaConTexto::after {
+    content: "";
+    flex: 1;
+    border-top: 1px solid variables.$color-titulos;
+    margin: 0 5px;
+}
 
 h2 {
     @include mixins.h2;
@@ -54,6 +69,9 @@ h2 {
     flex: 40%;
     font-family: variables.$fuente-texto;
     margin: 50px 0 0 10px;
+    a {
+        text-decoration: none;
+    }
     h4 {
         font-size: 1.4rem;;
         margin-bottom: 0.5rem;
@@ -71,6 +89,7 @@ h2 {
     flex: 1 1 55%;
     border-radius: variables.$border-radius-mapa;
     overflow: hidden;
+    @include mixins.cards-shadow;
     iframe {
         width: 100%;
         height: 100%;

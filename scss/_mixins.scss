@@ -1,6 +1,17 @@
 @use "variables";
 
+// Centrados
+
+@mixin centrado-absoluto {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
 // Flex - Grid
+
 @mixin flex($direction,$justify,$align){
   display: flex;
   flex-direction: $direction;
@@ -30,55 +41,23 @@
   grid-template-areas: $areas;
 }
 
-// Sombras
-@mixin box-shadow {
-  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
-}
-
-@mixin cards-shadow {
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-@mixin sombra-caja-color {
-  box-shadow: 0 0 15px rgba(0,0,0,0.1);
-}
-
-@mixin sombra-hover {
-  box-shadow: 4px 6px 8px rgba(0, 0, 0, 0.4);
-}
-
-@mixin sombra-texto {
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2)
-}
-
-
-// Animaciones
-
-@mixin hover-color($color) {
-    &:hover {
-      color: $color;
-  }
-}
-
-// Centrados
-
-@mixin centrado-absoluto {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-
 // Textos
 
-@mixin h2 {
+@mixin h1 {
   font-family: variables.$fuente-titulos;
   color: variables.$color-titulos;
   text-align: center;
-  font-size: 30px;
-  padding: 10px;
+  font-size: 40px;
+  padding: 20px;
   margin-top: 10px;
+}
+
+@mixin h2 {
+  font-family: variables.$fuente-titulos;
+  color: variables.$color-texto;
+  font-size: 25px;
+  text-align: center;
+  padding: 10px;
 }
 
 @mixin h3 ($font-size, $margin, $align) {
@@ -104,6 +83,7 @@
 }
 
 // Botones
+
 @mixin boton-var-1 {
   margin: 5px;
   padding: 8px;
@@ -125,4 +105,40 @@
   font-size: 16px;
   cursor: pointer;
 }
+
+// Sombras
+
+@mixin box-shadow {
+  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+@mixin cards-shadow {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+@mixin sombra-caja-color {
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+@mixin sombra-hover {
+  box-shadow: 4px 6px 8px rgba(0, 0, 0, 0.4);
+}
+
+@mixin sombra-texto {
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2)
+}
+
+// Animaciones
+
+@mixin hover-color($color) {
+    &:hover {
+      color: $color;
+  }
+}
+
+
+
+
+
+
 

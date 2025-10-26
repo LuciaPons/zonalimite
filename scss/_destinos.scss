@@ -23,11 +23,19 @@
         object-fit: cover;
         display: block;
         opacity: 0.4;
+        border-radius: variables.$border-radius-mapa;
     }
 }
 
 .mapaDestinos {
     flex: 1 1 40%;
+    border-radius: variables.$border-radius-mapa;
+    @include mixins.cards-shadow;
+    iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
+    }
 }
 
 .cardsDestinosTexto {
@@ -44,7 +52,7 @@
     h3 {
         font-size: 1.8rem;
         margin-bottom: 10px;
-        color: variables.$color-detalles;
+        color: variables.$color-titulos;
     }
     p{
         line-height: 1.6;
