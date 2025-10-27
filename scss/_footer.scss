@@ -3,17 +3,17 @@
 
 /* Inicio style footer */
 
+.footerContenedor {
+    border-top: 1px solid variables.$color-titulos;
+}
+
 footer {
     font-family: variables.$fuente-texto;
     p{
-        text-align: right;
+        text-align: center;
         color: variables.$color-detalles;
         margin-right: 2rem;
     }
-}
-
-.footerContenedor {
-    width: 100%;
 }
 
 .logoContenedor {
@@ -27,24 +27,19 @@ footer {
 
 .navegadorFooter {
     margin-bottom: variables.$espaciado-base;
-    nav {
-        align-items: end;
-    }
-    a {
-    text-decoration: none;
-    color: variables.$color-detalles;
-    padding: 2px 7px 2px 7px;
-    font-family: variables.$fuente-texto;
-    }
     ul {
-    display: flex;
-    list-style: none;
-    flex-direction: row;
-    justify-content: flex-end;
-    margin: 40px 2rem 0 0;
-    }
-    &:hover {
-        color: variables.$color-titulos;
+        display: flex;
+        list-style: none;
+        flex-direction: row;
+        justify-content: flex-end;
+        margin: 40px 2rem 0 0;
+        a {
+            text-decoration: none;
+            color: variables.$color-detalles;
+            padding: 2px 7px;
+            font-family: variables.$fuente-texto;
+            @include mixins.hover-color(variables.$color-titulos);
+        }
     }
 }
 
@@ -58,21 +53,22 @@ footer {
 .footerRedes {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     gap: 5px;
-    padding-bottom: 10px;
+    padding: 10px;
     img {
-    width: 70%;
-    @include mixins.box-shadow;
-    margin-right: 4px;
-    &:hover {
-        @include mixins.sombra-hover
-        }
+        width: 70%;
+        margin-right: 4px;
     }
     a {
         &:hover {
-        color: variables.$color-titulos;
+            color: variables.$color-titulos;
         }
     }
+}
+
+.footerColor {
+    background-color: variables.$color-caja-color-solido;
 }
 
 /* Media queries footer */

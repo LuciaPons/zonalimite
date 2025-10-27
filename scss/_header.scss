@@ -37,7 +37,7 @@ header {
 .navegadorActivo {
      border: 1px solid variables.$color-titulos;
      border-radius: 5px;
-     background-color: rgba(191, 73, 4, 0.1);
+     background-color: variables.$color-caja-color-solido;
      @include mixins.box-shadow;
 }
 
