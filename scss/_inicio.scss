@@ -6,12 +6,16 @@ body {
 }
 
 /* Inicio style pagina inicio */
+
 .lineaConTexto {
     display: flex;
     align-items: center;
     h1 {
+        font-size: 3rem;
+        max-width: 70%;
+        text-align: center;
+        word-break: break-word;
         @include mixins.h1;
-        white-space: nowrap;
     }
 }
 
@@ -42,13 +46,12 @@ h2 {
     h3 {
         @include mixins.h3(1.4rem, 0 0 10px 0, center);
         font-weight: bold;
-        @include mixins.hover-color (variables.$color-titulos);
+        @include mixins.hover-color(variables.$color-titulos);
     }
     img {
         height: variables.$altura-card-inicio;
         padding: variables.$espaciado-base;
         width: 100%;
-        object-fit: contain;
     }
 }
 
@@ -127,12 +130,17 @@ h2 {
 /* Media queries pagina inicio */
 
 @media (max-width: 576px) {
+    .lineaConTexto h1 {
+        font-size: 2rem;
+        padding: 0 15px;
+        line-height: 1.3;
+    }
+    h2 {
+        font-size: 1.2rem;
+    }
     .cardsAventurasInicio {
         @include mixins.flex-mobile (column,center);
         gap: variables.$gap-card-mobile;
-    }
-    .cardsAventurasInicioContenido {
-        width: 70%;
     }
     .cardsDestinoDestacado {
         gap: 1px;
